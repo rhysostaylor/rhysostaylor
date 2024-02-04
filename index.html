@@ -14,15 +14,7 @@
 <body>
 <div class="wrapper">
   <div class="content">
-    <h1>The system</h1>
-    <h1>Everyone lives in it,<br>
-      you work for it,<br>
-      <span class='pink'>we decode it</span></h1>
-      <br>
-      <br>
-      <hr>
-      <br>
-      <br> 
+    
     <p id="currentDate"></p>
     <div id="prompt"></div>
   </div>
@@ -47,13 +39,13 @@
     let promptText = "";
 
     if ((dayOfWeek >= 1 && dayOfWeek <= 5) && (hour >= 9 && hour < 17)) {
-      promptText = "<p>And <span class='purple'>Machine</span> is open for business</p><p><a href=\"/contact.html\">Contact</a> an operator</p>";
+      promptText = "<p>And the<span class='purple'>Mumble Mob</span> are open for business</p><p><a href=\"/contact.html\">Contact</a> an operator</p>";
     } else if ((dayOfWeek >= 1 && dayOfWeek <= 4) && hour >= 17) {
-      promptText = "<p>And our <span class='purple'>Machine</span> operators have met their quota for the day</p><p>Leave your <a href=\"/contact.html\">contact details</a></p>";
+      promptText = "<p>And the <span class='purple'>Mumble Mob</span> operators have met their quota for the day</p><p>Leave your <a href=\"/contact.html\">contact details</a></p>";
     } else if ((dayOfWeek >= 2 && dayOfWeek <= 5) && (hour >= 0 && hour < 9)) {
-      promptText = "<p>And <span class='purple'>Machine</span> hasn't started for the day yet</p><p><a href=\"/contact.html\">Let us know</a> you called</p>";
+      promptText = "<p>And the <span class='purple'>Mumble Mob</span> hasn't started for the day yet</p><p><a href=\"/contact.html\">Let us know</a> you called</p>";
     } else if ((dayOfWeek === 5 && hour >= 17) || isWeekend || (dayOfWeek === 1 && hour < 9)) {
-      promptText = "<p>And <span class='purple'>Machine</span> has shut down for the weekend</p><p>We'll be back on Monday so leave your <a href=\"/contact.html\">contact details</a></p>";
+      promptText = "<p>And the <span class='purple'>Mumble Mob</span> has shut down for the weekend</p><p>We'll be back on Monday so leave your <a href=\"/contact.html\">contact details</a></p>";
     }
 
     document.getElementById('prompt').innerHTML = promptText;
