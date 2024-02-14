@@ -1,4 +1,11 @@
-* {
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rhys Taylor</title>
+  <meta name="robots" content="noindex">
+  <style>
+
+    * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -22,7 +29,18 @@ body {
 
 #menuImage {
   width: 50%; /* 50% of the menu width */
+  animation: rotate 25s linear infinite; /* Add animation property */
 }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Initial rotation angle */
+  }
+  100% {
+    transform: rotate(360deg); /* Final rotation angle */
+  }
+}
+
 
 .menu ul {
   list-style-type: none;
@@ -129,3 +147,36 @@ body {
 .footer a:visited {
   color: #333;
 }
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+
+      <!--<img src="orbit-blue.png" id="menuImage">
+            <br> -->
+      <br>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#commentary">Essays and Talks</a></li>
+        <li><a href="#reference">Reference</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+    <div class="content">
+      <h1 id="contact">Contact</h1>
+      <p>I try to reply promptly to genuine requests sent to rost (at) duck (dot) com; I don't regularly monitor <a href="https://www.linkedin.com/in/rhysostaylor/">LinkedIn</a></p>
+
+
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2023</p>
+  </div>
+  <script async data-id="101408979" src="//static.getclicky.com/js"></script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101408979ns.gif" /></p></noscript>
+</body>
+</html>

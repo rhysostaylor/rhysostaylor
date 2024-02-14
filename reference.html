@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rhys Taylor</title>
+  <meta name="robots" content="noindex">
+  <style>
+
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.menu {
+  background-color: #C6D2D5;
+  width: 200px;
+  padding: 20px;
+}
+
+#menuImage {
+  width: 50%; /* 50% of the menu width */
+  animation: rotate 25s linear infinite; /* Add animation property */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Initial rotation angle */
+  }
+  100% {
+    transform: rotate(360deg); /* Final rotation angle */
+  }
+}
+
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #103362;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  max-width: 512px;
+  margin-left: 0;
+  margin-bottom: 100px;
+}
+
+.content h1 {
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 5px;
+}
+
+.content a {
+  color: #2A66BC;
+}
+
+.content a:hover {
+  color: #2A66BC;
+}
+
+.content a:visited {
+  color: #2A66BC;
+}
+
+.meta {
+  font-size: 12px;
+  color: #888;
+}
+
+.highlight {
+  background-color: #EEC687;
+  color: black;
+}
+
+.content ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .menu {
+    width: 100%;
+  }
+  
+  #menuImage {
+    width: 20%; /* 30% of the screen width */
+  }
+
+  .content {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.footer {
+  background-color: #A4B3B6;
+  color: #333;
+  padding: 10px;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #333;
+}
+
+.footer a:hover {
+  color: #333;
+}
+
+.footer a:visited {
+  color: #333;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+
+      <!--<img src="orbit-blue.png" id="menuImage">
+            <br> -->
+      <br>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#commentary">Essays and Talks</a></li>
+        <li><a href="#reference">Reference</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+    <div class="content">
+
+
+      <h1 id="reference">Reference</h1>
+        <p>Convenient ways to avoid small talk, and a random inspiration generator</p>
+        <br>
+        <p>Quotes</p>
+        <ul>
+          <li>
+            <a href="https://youtu.be/SiB8GVMNJkE">On a long enough timeline, the survival rate for everyone drops to zero</a>
+            <br>
+            <span class="meta">Chuck Palahniuk / Tyler Durden</span>
+          </li>
+          <li>
+            <a href="https://youtu.be/XsXlbf5gJ1Y?t=4113">A technology pioneer regrets not realising "smartness" isn't enough, sooner</a>
+            <br>
+            <span class="meta">Hunter College</span>
+          </li>
+          <li>
+            <a href="https://youtu.be/kexuG-YcQFA?t=74">The traits a global CEO looks for in new hires</a>
+            <br>
+            <span class="meta">Fast Company</span>
+          </li>
+          <li>
+            <a href="https://www.thisdayinquotes.com/2011/09/no-one-ever-went-broke-underestimating.html">No one ever went broke underestimating the intelligence of the American public (Or, what the quote actually said)</a>
+            <br>
+            <span class="meta">H.L. Mencken</span>
+          </li>
+          <li>
+            <a href="https://youtu.be/s3e-BwAeevM?t=263">A curmudgeon describes advertising as poison gas (Misleading title)</a>
+            <br>
+            <span class="meta">Art & Copy</span>
+          </li>
+          <li>
+            <a href="http://www.paulgraham.com/quo.html">Steal from the best of what others have already figured out</a>
+            <br>
+            <span class="meta">Farnam Street & Paul Graham</span>
+          </li>
+        </ul>
+        <br>
+        <p>Models</p>
+        <ul>
+          <li>
+            <a href="https://www.media.mit.edu/publications/the-media-lab-inventing-the-future-book/">We have been busy (re)inventing the future for a long time already</a>
+            <br>
+            <span class="meta">Stewart Brand</span>
+          </li>
+          <li>
+            <a href="https://jods.mitpress.mit.edu/pub/issue3-brand/release/2">Power dynamics and change in complex systems — and what "culture" really means</a>
+            <br>
+            <span class="meta">MIT</span>
+          </li>
+          <li>
+            <a href="https://hbr.org/2007/11/a-leaders-framework-for-decision-making">A framework for right-sized decision making, starting with context</a>
+            <br>
+            <span class="meta">Harvard Business Review</span>
+          </li>
+          <li>
+            <a href="https://web.archive.org/web/20200531140941/https://www.cpj.fyi/the-undercurrent-skills-maturity-matrix/">How strategists level up — skills maturity matrix (Wayback archive)</a>
+            <br>
+            <span class="meta">Undercurrent</span>
+          </li>
+        </ul>
+        <br>
+        <p>Random provocations</p>
+        <ul>
+        <script>
+          var inputs = ["https://zoescaman.substack.com/p/from-frameworks-to-flywheels", "https://www.varunsrinivasan.com/2022/01/11/sufficient-decentralization-for-social-networks", "https://jods.mitpress.mit.edu/pub/issue3-brand/release/2", "https://www.cpj.fyi/the-undercurrent-skills-maturity-matrix/", "https://www.mckinsey.com/featured-insights/employment-and-growth/the-granularity-of-growth", "https://fs.blog/knowledge-project-podcast/laurie-santos/", "https://mitpress.mit.edu/9780262047357/behind-their-screens/", "https://www.ted.com/podcasts/how-free-solo-climber-alex-honnold-faces-fear-transcript", "https://archive.cancerworld.net/featured/how-doctors-die/", "https://bookriot.com/what-happens-to-our-brains-when-we-read/", "https://subpixel.space/entries/life-after-lifestyle/", "https://mirror.xyz/crowdmuse.eth/fnrfPZuo_bcfysIdgZZiQz5CQ_hLwJUqL-3u2zN-qtM", "https://www.blackstone.com/news/press/blackstones-byron-wien-discusses-lessons-learned-in-his-first-80-years/", "https://restofworld.org/2021/google-is-crowdsourcing-a-map-of-mexicos-street-foods/", "https://www.codusoperandi.com/posts/increasing-your-luck-surface-area", "https://genius.com/Tim-minchin-commencement-speech-and-university-of-western-australia-annotated", "https://marker.medium.com/how-mormons-built-the-next-silicon-valley-while-no-one-was-looking-c50add577478", "https://www.matthewball.vc/all/china-marvel-and-the-uncertain-future-of-the-global-franchise", "https://www.itsnicethat.com/features/machine-learning-are-designers-even-needed-anymore-richard-turley-guest-edit-graphic-design-170822", "https://news.stanford.edu/2014/04/24/walking-vs-sitting-042414/", "https://www.vox.com/2014/8/28/6074177/coffee-naps-caffeine-science", "https://thehustle.co/how-marketers-convinced-america-to-eat-fish-sticks/", "https://www.theguardian.com/film/2021/feb/03/they-came-at-night-how-a-spanish-crew-shot-an-alternative-dracula-after-bela-lugosi-had-gone-to-bed", "https://meta.wikimedia.org/wiki/Cunningham%27s_Law", "https://en.wikipedia.org/wiki/Brian_Eno#The_Microsoft_Sound", "https://www.youtube.com/watch?v=56cni2ZpWFU", "https://www.youtube.com/watch?v=s3e-BwAeevM", "https://www.youtube.com/watch?v=HQ2D2eJRY-c", "https://davedye.com/2019/04/11/pitch-david-abbott-bt/", "https://www.codecademy.com/resources/blog/myspace-and-the-coding-legacy/", "http://www.talyarkoni.org/blog/2010/07/07/What-the-Dunning-Kruger-effect-Is-and-Isnt/", "https://trms.me/the-value-of-doing-a-little/", "https://www.theverge.com/2016/8/3/12325104/airbnb-aesthetic-global-minimalism-startup-gentrification", "https://www.wsj.com/articles/amazon-has-been-slashing-private-label-selection-amid-weak-sales-11657849612", "https://ben-kay.com/2022/03/we-are-speaking-different-languages/", "https://xkcd.com/2501/", "https://en.wikipedia.org/wiki/Eternal_September", "https://twitter.com/culturaltutor/status/1551976051860963333", "https://twitter.com/rockatscientist/status/1195124977172799488", "https://twitter.com/BrianRoemmele/status/1298635152139026432", "https://twitter.com/WIRED/status/1575666745188261890", "https://twitter.com/NickDale/status/1450617359375343617", "https://twitter.com/David_Rudnick/status/1577213092249079808", "https://twitter.com/BBCArchive/status/1566016654357565440", "https://twitter.com/benedictevans/status/1520544709554458626", "https://twitter.com/collision/status/1529452415346302976", "https://twitter.com/reidhoffman/status/1575522189167599616", "https://twitter.com/zoink/status/1566504631772930048", "https://twitter.com/archillect/status/1582674162271031296", "https://twitter.com/visualizevalue/status/1582801084006821888", "https://www.youtube.com/watch?v=BKorP55Aqvg", "https://www.youtube.com/watch?v=suRDUFpsHus", "http://khole.net/", "https://www.youtube.com/watch?v=keCwRdbwNQY", "https://wepresent.wetransfer.com/stories/fairground-art-history/", "https://thecynefin.co/about-us/about-cynefin-framework/", "https://medium.com/lessons-from-mckinsey/the-pyramid-principle-f0885dd3c5c7", "https://www.hofstede-insights.com/product/compare-countries/", "https://thedesignsquiggle.com/", "https://twitter.com/doctorow/status/1583144046800691200", "https://www.bigmartech.com/what-is-data/", "https://twitter.com/davetrott/status/1579776537775067136", "https://stephanango.com/photoshop-for-text", "https://twitter.com/ScottRhodie/status/1581918030631960579", "https://readmultiplex.com/2022/10/16/the-histomap-a-4000-year-graphical-timeline-of-history/", "https://brandsandhumour.substack.com/p/how-about-never-is-never-good-for", "https://hbr.org/2016/11/why-diverse-teams-are-smarter?utm_medium=social&utm_campaign=hbr&utm_source=twitter&tpcc=orgsocial_edit", "https://twitter.com/BusinessInsider/status/1582583405279031296", "https://www.wired.com/story/give-me-my-bubblegum-pink-iphone/", "https://twitter.com/Allensmith81/status/1534823520865292288", "https://twitter.com/CanteringClark/status/1573680890244468737", "https://www.marketingdive.com/news/marketing-Gen-Z-subculture-gamer-girls/633090/", "https://twitter.com/farnamstreet/status/1575468970416676866", "https://twitter.com/ehdecker/status/1506327100038524939", "https://twitter.com/platini954/status/1499803350405193728", "https://andjelicaaa.substack.com/p/taxonomy-of-value?s=w", "https://every.to/superorganizers/managing-your-manager", "https://www.variance.com/posts/execution-strategy", "https://twitter.com/john_c_palmer/status/1490456389885566976", "https://bigthink.com/progress/pessimism-is-a-barrier-to-progress/", "https://www.contagious.com/news-and-views/daniel-kahneman-olivier-sibony-noise-interview-behiavioural-economics", "https://economysea.withgoogle.com/", "https://twitter.com/balajis/status/1560189081308409856", "https://twitter.com/AlecStapp/status/1559917193999093760", "https://open.nytimes.com/how-the-new-york-times-uses-machine-learning-to-make-its-paywall-smarter-e5771d5f46f8", "https://twitter.com/culturaltutor/status/1558551902505279489", "https://www.reddit.com/r/explainlikeimfive/comments/vi0d21/comment/ida7qoq/", "https://twitter.com/culturaltutor/status/1538211934968897538", "https://twitter.com/GaryMarcus/status/1524892106027741184", "https://twitter.com/elonmusk/status/1585619322239561728/photo/3", "https://www.inc.com/justin-bariso/tim-cook-may-have-just-ended-facebook.html", "https://www.bloomberg.com/features/2022-the-crypto-story/", "https://en.wikipedia.org/wiki/Jugaad", "https://neurosciencenews.com/acting-self-suppression-21733/", "https://bootcamp.uxdesign.cc/how-does-systems-thinking-help-design-thinking-4553a7133e38", "https://cdixon.org/2013/08/04/the-idea-maze", "https://nickbostrom.com/fable/dragon", "https://www.newyorker.com/books/page-turner/this-is-water", "https://www.palladiummag.com/2022/01/06/quit-your-job/", "https://www.bloomberg.com/features/2022-the-crypto-story/", "https://www.adbusters.org/manifesto", "https://www.fastcompany.com/90549066/the-rise-of-dark-stores-and-how-they-could-save-struggling-retail", "https://www.campaignasia.com/article/the-programmatic-poop-funnel/475018", "https://bodydoubling.com/", "https://newrepublic.com/article/167270/crossword-labor-market-times", "https://brainpizza.substack.com/p/sins-of-memory", "https://planetofthepaul.com/wikipedia-download-usb-flash/", "https://twitter.com/wonderwomancode/status/1475202774212100097", "https://a16z.com/2019/12/09/product-zeitgeist-fit/", "https://www.mi-3.com.au/18-10-2021/200bn-black-hole-marketers-wasting-third-budgets-giving-agencies-crap-briefs-and-dont?", "https://delanceyplace.com/view-archives.php?p=2137", ];
+
+          function randomInput() {
+            var t = parseInt(Math.random() * inputs.length);
+            location.href = inputs[t];
+          }
+        </script>
+        <li>
+          <a href="#" onclick="randomInput()">Generate some inspiration</a>
+        </li>
+        <script>
+          var outcomes = ["https://www.youtube.com/watch?v=miZHa7ZC6Z0", "https://youtu.be/VxyiRMcNIVo", "https://www.marklives.com/2016/11/kenzo-world-good-old-fashioned-fun-with-good-old-fashioned-codes/", "https://www.youtube.com/watch?v=n1Qrv4Rg8Gs&ab_channel=Sephora", "https://www.kesselskramer.com/project/diesel-3/diesel-4", "https://www.adsoftheworld.com/campaigns/make-an-understatement", "https://www.youtube.com/watch?v=ZUG9qYTJMsI", "https://www.youtube.com/watch?v=6ZMWx3v_6-w", "https://shortyawards.com/8th/say-no-to-spec-2", "https://www.marketingweek.com/seedlip-no-alcohol-campaign/", "https://www.contagious.com/news-and-views/campaign-of-the-week-new-zealand-graphic-injuries-seatbelts-save-lives", "https://www.youtube.com/watch?v=IJNR2EpS0jw", "https://www.youtube.com/watch?v=l3Vom3ISCNI", "https://www.youtube.com/watch?v=XchgMmpGFuo", "https://www.youtube.com/watch?v=4oAB83Z1ydE", "https://vimeo.com/213288370", "https://www.adforum.com/creative-work/ad/player/34513267/the-sound-of-azure/microsoft-azure", "https://www.youtube.com/watch?v=ZbzKcTaOlXg&ab_channel=OddStudio", "https://www.thinkwithgoogle.com/feature/cmo-insights", "https://vimeo.com/272624653", "https://store.tomsachs.com/collections/frontpage/products/nikecraft-general-purpose-shoe-archive", "https://www.nytimes.com/interactive/2022/08/19/arts/design/michael-heizer-city.html", "https://twitter.com/blink182/status/1579805755217059840", "https://twitter.com/janthonylong/status/1579495594611310592", "https://twitter.com/TheLisaGilroy/status/1582411051135401991", "https://vimeo.com/711063264", "https://socialitelife.com/ryan-gosling-fronts-the-new-gucci-valigeria-campaign-photos/", "https://twitter.com/JizzJohnsonJr/status/1578134493281619968", "https://twitter.com/tomfgoodwin/status/1577306904631644164", "https://twitter.com/BizarreLazar/status/1576613690651987968", "https://twitter.com/ehdecker/status/1506741080884232192", "https://twitter.com/opinion/status/1505292742993321993", "https://twitter.com/LarsJohanL/status/1505999058825097219", "https://twitter.com/AnonOpsSE/status/1506583016436604933", "https://davedye.com/2022/03/22/interview-george-gier/", "https://www.youtube.com/watch?v=CtWirGxV7Q8", "https://www.youtube.com/c/VancityReynolds/videos", "https://www.youtube.com/watch?v=0eEG5LVXdKo", "https://www.youtube.com/watch?v=kOO31qFmi9A", "https://vimeo.com/101235721", "https://twitter.com/joeyldotcom/status/1570124816950362113", "https://twitter.com/RealSexyCyborg/status/1569220300063281152", "https://www.sartoshiscript.xyz/", "https://www.youtube.com/shorts/nn_R2uqMVDM", "https://twitter.com/Dmurr68/status/1567875487443341313", "https://twitter.com/PointsBetUSA/status/1543063082737418242", "https://twitter.com/SHL0MS/status/1561182593994866688", "https://twitter.com/george_orwell3/status/1559949780838653957", "https://www.netflix.com/sg/title/80184067", "https://twitter.com/oykun/status/1558434191661989889", "https://twitter.com/LeonLush/status/1557766566640553984", "https://twitter.com/ormanclark/status/1554820962218123265", "https://twitter.com/reathchris/status/1554584534036803584", "https://twitter.com/Fritschner/status/1545077380527673344", "https://www.tiktok.com/@julesterpak/video/7116577733638901038?_r=1&_t=8Ti2HaRtu6Y&is_from_webapp=v1&item_id=7116577733638901038", "https://www.instagram.com/p/BuFbAVLlmaZ/", "https://twitter.com/brian_bilston/status/1538789295397421056", "https://www.tiktok.com/@pintofplane/video/7089872052940836101?is_from_webapp=v1&item_id=7089872052940836101", "https://twitter.com/templecrash/status/1522395071194279938", "https://www.youtube.com/watch?v=AQ_XSHpIbZE", "https://www.youtube.com/watch?v=2YBtspm8j8M", "https://www.youtube.com/watch?v=i_QXvh8fVPI", "https://www.youtube.com/watch?v=vM3J9jDoaTA", "https://www.youtube.com/watch?v=U4yYbEAUoT4", "https://www.youtube.com/watch?v=AgpWX18dby4", "https://www.youtube.com/watch?v=F-TyPfYMDK8", "https://www.youtube.com/watch?v=0fzst0kM8pI", "https://twitter.com/skominers/status/1533238199220322304", "https://twitter.com/Em0n33y/status/1522333060343099393", "https://flashbak.com/art-power-30-fantastic-posters-and-flyers-from-the-paris-uprising-may-1968-424236/", "https://www.youtube.com/watch?v=CekUwaPKUUM", "https://www.youtube.com/watch?v=OINa46HeWg8&ab_channel=charstarleneTV", "https://y-n10.com/", "https://damonsbrain.com/2019/10/13/advertising-so-what-happens-to-once-upon-a-time/", "https://www.inc.com/jeff-haden/a-7-year-old-wrote-to-lego-asking-for-a-job-companys-response-was-brilliant.html", "https://www.titosvodka.com/titos-in-a-can/", "https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html", "https://www.amazon.com/dp/B09LM74TLM/", "https://www.breathablebacon.com/", "https://youtu.be/art6E-aZei0", "https://www.fastcompany.com/90558637/the-ultimate-quarantine-jeans-are-here-just-dont-call-them-jeggings", "https://store.steampowered.com/app/1902490/Aperture_Desk_Job/", "https://shop.californiacowboy.com/collections/gifts-accessories/products/out-of-pocket-pouch?variant=39533722107992", "https://nouns.build/", "https://signal.org/blog/the-instagram-ads-you-will-never-see/", "http://www.notcot.org/post/63887/Timelapse-in-Google-Earth-is-a-stunning-zoomed-out-look/", "https://www.spoon-tamago.com/2021/03/13/kami-kamisori-paper-razor/", "https://www.benvessey.com/mac/", "https://www.reuters.com/article/us-thai-airways-rescue-food-idUSKBN25U1VJ", "https://manofmany.com/lifestyle/sex-dating/lifestyles-new-publicly-traded-site-lets-you-invest-in-safer-sex", "https://www.theverge.com/2020/7/8/21317032/linkedin-name-pronunciation-record-audio-feature", "https://markcole.myportfolio.com/vodafone-64home", "http://astronaut.io/", "https://www.thiswebsitewillselfdestruct.com/", "https://moondisaster.org/", "https://simonwillison.net/2022/Nov/6/what-to-blog-about/", "https://youtu.be/g0-F88c6Hrk", "https://www.youtube.com/watch?v=PrG9br-jigQ", "https://www.wsj.com/articles/airbnb-says-its-focus-on-brand-marketing-instead-of-search-is-working-11667506438", "https://blog.roblox.com/2022/11/insights-from-our-2022-metaverse-fashion-trends-report/", "https://www.wpp.com/-/media/project/wpp/files/bullmore-collection/a_20th_century_lesson.pdf", "https://every.to/napkin-math/how-costco-convinces-brands-to-cannibalize-722932", "https://imgur.com/gallery/SWc6j27", "https://verses.xyz/", "https://www.interdependence.online/about", "https://pluriverse.world/", "https://what.cd/", ];
+
+          function randomOutcome() {
+            var t = parseInt(Math.random() * outcomes.length);
+            location.href = outcomes[t];
+          }
+        </script>
+        <li>
+          <a href="#" onclick="randomOutcome()">Generate a case example</a>
+        </li>
+      </ul>
+
+
+
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2023</p>
+  </div>
+  <script async data-id="101408979" src="//static.getclicky.com/js"></script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101408979ns.gif" /></p></noscript>
+</body>
+</html>

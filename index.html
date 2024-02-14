@@ -1,59 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, notranslate, noimageindex">
-  <meta name="googlebot" content="noindex, nofollow">
-  <meta name="bingbot" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Mumble Mob</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>Rhys Taylor</title>
+  <meta name="robots" content="noindex">
+  <style>
+
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.menu {
+  background-color: #C6D2D5;
+  width: 200px;
+  padding: 20px;
+}
+
+#menuImage {
+  width: 50%; /* 50% of the menu width */
+  animation: rotate 25s linear infinite; /* Add animation property */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Initial rotation angle */
+  }
+  100% {
+    transform: rotate(360deg); /* Final rotation angle */
+  }
+}
+
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #103362;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  max-width: 512px;
+  margin-left: 0;
+  margin-bottom: 100px;
+}
+
+.content h1 {
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 5px;
+}
+
+.content a {
+  color: #2A66BC;
+}
+
+.content a:hover {
+  color: #2A66BC;
+}
+
+.content a:visited {
+  color: #2A66BC;
+}
+
+.meta {
+  font-size: 12px;
+  color: #888;
+}
+
+.highlight {
+  background-color: #EEC687;
+  color: black;
+}
+
+.content ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .menu {
+    width: 100%;
+  }
+  
+  #menuImage {
+    width: 20%; /* 30% of the screen width */
+  }
+
+  .content {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.footer {
+  background-color: #A4B3B6;
+  color: #333;
+  padding: 10px;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #333;
+}
+
+.footer a:hover {
+  color: #333;
+}
+
+.footer a:visited {
+  color: #333;
+}
+
+
+</style>
 </head>
 <body>
-<div class="wrapper">
-  <div class="content">
-    
-    <p id="currentDate"></p>
-    <div id="prompt"></div>
+  <div class="container">
+    <div class="menu">
+
+      <!--<img src="orbit-blue.png" id="menuImage">
+            <br> -->
+      <br>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#commentary">Essays and Talks</a></li>
+        <li><a href="#reference">Reference</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </div>
+    <div class="content">
+      <h1 id="bio">Bio</h1>
+      <p>Rhys is a British/New Zealand businessperson living in Singapore. He has held executive positions in the financial services and marketing industries</p>
+      <p>In 2012 he was a member of the Management Team responsible for Marketing when <a href="https://www.wolterskluwer.com/en/news/wolters-kluwer-tax-accounting-plans-to-expand-online-software-solutions-with-agreement-to-acquire-acclipse">Acclipse was acquired by Wolters Kluwer</a>; Acclipse developed tax workflow and content management SaaS products</p>
+      <p>Later Rhys worked across Asia Pacific as a consultant at Wunderman-Bienalto -- a digital transformation firm acquired by <a href="https://www.wpp.com/en/investors">WPP plc</a>. And in 2020 he became Asia Pacific Managing Director at <a href="https://www.group.dentsu.com/en/ir/ataglance/">Dentsu Inc.</a>, responsible for the B2B Strategy and Creative Services practice</p>
+      <p>Most recently Rhys returned to WPP in 2023 as Managing Director at <a href="https://www.vmlyr.com/featured-work">VMLY&R</a> -- a $2B+ brand and service design agency with 15,000 employees worldwide</p>
+      <br>
+      <a href="rt.png">
+      <img src="rt.png" width="200" height="200">
+      </a>
+      <p><span class="meta">Click image for full size</span></p>
+      <br>
+      <ul>
+        <li><a href="https://campaignbriefasia.com/2023/01/09/rhys-taylor-joins-vmlyr-singapore-from-dentsu-international-in-managing-director-role/">VMLY&R appointment</a></li>
+        <li><a href="https://www.campaignasia.com/article/dentsus-merkle-b2b-absorbs-gyro-and-merkle-dwa/475676">Merkle:Dentsu appointment</a></li>
+        <li><a href="https://www.mumbrella.asia/2018/10/dentsu-b2b-agency-gyro-appoints-strategy-head-for-asia-pacific">Gyro:Dentsu appointment</a></li>
+      </ul>
+
+
+    </div>
   </div>
-</div>
-<script>
-  function getCurrentDate() {
-    const date = new Date();
-    const dayOfWeek = date.toLocaleString('en-US', { weekday: 'long' });
-    const day = date.getDate();
-    const month = date.toLocaleString('en-US', { month: 'long' });
-    const year = date.getFullYear();
-    
-    return "It's " + dayOfWeek + ",<br>" + day + " " + month + " " + year;
-  }
-
-  function updatePrompt() {
-    const date = new Date();
-    const dayOfWeek = date.getDay();
-    const hour = date.getHours();
-    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
-
-    let promptText = "";
-
-    if ((dayOfWeek >= 1 && dayOfWeek <= 5) && (hour >= 9 && hour < 17)) {
-      promptText = "<p>And the<span class='purple'>Mumble Mob</span> are open for business</p><p>Please contact an operator</p>";
-    } else if ((dayOfWeek >= 1 && dayOfWeek <= 4) && hour >= 17) {
-      promptText = "<p>And the <span class='purple'>Mumble Mob</span> operators have met their quota for the day</p>";
-    } else if ((dayOfWeek >= 2 && dayOfWeek <= 5) && (hour >= 0 && hour < 9)) {
-      promptText = "<p>And the <span class='purple'>Mumble Mob</span> hasn't started for the day yet</p>";
-    } else if ((dayOfWeek === 5 && hour >= 17) || isWeekend || (dayOfWeek === 1 && hour < 9)) {
-      promptText = "<p>And the <span class='purple'>Mumble Mob</span> has shut down for the weekend</p><p>We'll be back on Monday</p>";
-    }
-
-    document.getElementById('prompt').innerHTML = promptText;
-  }
-
-  document.getElementById('currentDate').innerHTML = getCurrentDate();
-  updatePrompt();
-  setInterval(updatePrompt, 60000);
-</script>
+  <div class="footer">
+    <p>&copy; 2023</p>
+  </div>
+  <script async data-id="101408979" src="//static.getclicky.com/js"></script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101408979ns.gif" /></p></noscript>
 </body>
 </html>
